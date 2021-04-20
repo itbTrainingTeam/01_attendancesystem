@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kameron&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/venders/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- 管理者用ヘッダーの読み込み箇所の指定 -->
+    <header id="admin-header">
+    </header>
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- メインコンテンツ(右側部分) -->
+        <div class="main-attendance-container-right">
+            <!-- カレンダーコンテナ -->
+            <div class="calendar-container">
+                <!-- 月選択コンテナ -->
+                <div class="calendar-container__month">
+                    <table class="month-table">
+                        <thead class="month-table-head">
+                            <tr class="month-table-head-row">
+                                <th colspan="4">Month</th>
+                            </tr>
+                        </thead>
+                        <tbody class="month-table-body">
+                            <tr class="month-table-body-row">
+                                <td class="month-table-body-row-data">1</td>
+                                <td class="month-table-body-row-data">2</td>
+                                <td class="month-table-body-row-data">3</td>
+                                <td class="month-table-body-row-data">4</td>
+                            </tr>
+                            <tr class="month-table-body-row">
+                                <td class="month-table-body-row-data">5</td>
+                                <td class="month-table-body-row-data">6</td>
+                                <td class="month-table-body-row-data">7</td>
+                                <td class="month-table-body-row-data">8</td>
+                            </tr>
+                            <tr class="month-table-body-row">
+                                <td class="month-table-body-row-data">9</td>
+                                <td class="month-table-body-row-data">10</td>
+                                <td class="month-table-body-row-data">11</td>
+                                <td class="month-table-body-row-data">12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 年選択コンテナ -->
+                <div class="calendar-container__year">
+                </div>
+            </div>
+            <!-- 現在時刻コンテナ -->
+            <div class="current-time-container">
+                <!-- 日付 -->
+                <div class="current-time-container__date">
+                </div>
+                <!-- 時間 -->
+                <div class="current-time-container__time">
+                </div>
+            </div>
+            <!-- 勤怠ボタンコンテナ -->
+            <div class="attendance-btn-container">
+                <!-- 出勤ボタンコンテナ -->
+                <div class="attendance-btn-container__commuting">
+                    <form class="attendance-form commuting-form" action="">
+                        <input class="attendance-btn commuting-btn" type="submit" value="出勤">
+                    </form>
+                </div>
+                <!-- 退勤ボタンコンテナ -->
+                <div class="attendance-btn-container__leave">
+                    <form class="attendance-form leave-form" action="">
+                        <input class="attendance-btn leave-btn" type="submit" value="退勤">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../scripts/libs/currentTime.js"></script>
+    <script src="../scripts/libs/scrollYears.js"></script>
+    <script src="../scripts/libs/clickMonth.js"></script>
+    <script src="../scripts/libs/loadHtml.js"></script>
+    <script src="../scripts/libs/toggleClassIOnClick.js"></script>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
