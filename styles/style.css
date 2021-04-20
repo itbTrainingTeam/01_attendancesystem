@@ -2,8 +2,8 @@
 /* import templates */
 /* import base_style */
 body {
-  font-family: 'Kameron', serif;
-  font-family: 'Shippori Mincho', serif;
+  font-family: "Kameron", serif;
+  font-family: "Shippori Mincho", serif;
   color: #707070;
 }
 
@@ -21,29 +21,23 @@ h1 {
 
 /* import modules */
 .header-container-admin {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 80px;
   background-color: #D6C5FB;
 }
-
 .header-container-admin__title {
   margin: auto 0;
   margin-left: 20px;
 }
-
 .header-container-admin__menu {
   margin: auto 0;
   margin-left: auto;
   margin-right: 20px;
   position: relative;
 }
-
 .header-container-admin__menu .header-mobile-admin-menu {
   margin: auto 0;
 }
-
 .header-container-admin__menu .header-mobile-admin-menu .mobile-admin-menu-item {
   display: block;
   width: 50px;
@@ -51,11 +45,9 @@ h1 {
   margin-bottom: 10px;
   background-color: #646464;
 }
-
 .header-container-admin__menu .header-mobile-admin-menu .mobile-admin-menu-item:last-child {
   margin-bottom: 0;
 }
-
 .header-container-admin__menu .header-menu-admin {
   position: absolute;
   top: 60px;
@@ -64,44 +56,33 @@ h1 {
   width: 150px;
   border: solid 1px black;
   background-color: #ebe9e9;
-  -webkit-transform: translateY(-80px);
-          transform: translateY(-80px);
+  transform: translateY(-80px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
-  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
-
 .header-container-admin__menu .header-menu-admin.open {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   opacity: 1;
   z-index: 10;
 }
-
 .header-container-admin__menu .header-menu-admin .header-menu-admin-list {
   margin: auto 0;
   padding-left: 10px;
   padding-right: 10px;
 }
-
 .header-container-admin__menu .header-menu-admin .header-menu-admin-list .header-menu-admin-item {
   display: block;
   margin-bottom: 7px;
   border-bottom: solid 1px black;
   cursor: pointer;
 }
-
 .header-container-admin__menu .header-menu-admin .header-menu-admin-list .header-menu-admin-item > a {
   color: black;
   text-decoration: none;
 }
-
 .header-container-admin__menu .header-menu-admin .header-menu-admin-list .header-menu-admin-item > a:hover {
   text-shadow: 2px 2px 3px blue;
 }
-
 .header-container-admin__menu .header-menu-admin .header-menu-admin-list .header-menu-admin-item:first-child {
   margin-top: 7px;
 }
@@ -109,40 +90,27 @@ h1 {
 .main-chg-container .chg-form {
   margin-top: 30px;
 }
-
 .main-chg-container .chg-form .text-form-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .main-chg-container .chg-form .text-form-group .form-text {
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .main-chg-container .chg-form .text-form-group .form-text .form-text-label {
   display: block;
   margin-left: auto;
 }
-
 .main-chg-container .chg-form .text-form-group .form-text .form-text-label::after {
   content: ":";
   margin-left: 5px;
   margin-right: 15px;
 }
-
 .main-chg-container .chg-form .text-form-group .form-text .form-text-input {
   display: block;
   margin-right: 25%;
 }
-
 .main-chg-container .chg-form .form-btn .form-btn-submit {
   display: block;
   margin: 0 auto;
@@ -151,10 +119,8 @@ h1 {
   border: solid 1px #707070;
   color: #707070;
   font-size: 20px;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .main-chg-container .chg-form .form-btn .form-btn-submit:hover {
   border: solid 1px #3091ff;
   background-color: #b9c2fd;
@@ -165,45 +131,36 @@ h1 {
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 main .main-attendance-container-left {
   color: #707070;
   width: 50%;
 }
-
 main .main-attendance-container-left .table_title {
   overflow: hidden;
   margin: 50px auto;
   text-align: center;
 }
-
 main .main-attendance-container-left .table_title select {
   padding: 10px;
   font-size: 20px;
   border: 1px solid #707070;
   color: #707077;
 }
-
 main .main-attendance-container-left table {
   margin: 10px auto;
   border-collapse: collapse;
   width: 90%;
 }
-
 main .main-attendance-container-left table th, main .main-attendance-container-left table td {
   border: solid 1px #333;
   /* 線の種類 太さ 色 */
 }
-
 main .main-attendance-container-left .export {
   margin: auto;
   width: 90%;
 }
-
 main .main-attendance-container-left .view_work {
   margin: 10px auto;
   width: 90%;
@@ -211,66 +168,48 @@ main .main-attendance-container-left .view_work {
   border: solid 1px #333;
   height: 70px;
 }
-
 main .main-attendance-container-left .view_work .p {
   float: left;
   width: 50%;
 }
-
 main .main-attendance-container-right {
   width: 50%;
 }
-
 main .main-attendance-container-right .calendar-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 main .main-attendance-container-right .calendar-container__month {
   margin-top: 50px;
   margin-left: auto;
   margin-right: 5%;
   width: 25%;
 }
-
 main .main-attendance-container-right .calendar-container__month .month-table {
   border: solid 1px black;
   width: 100%;
 }
-
 main .main-attendance-container-right .calendar-container__month .month-table .month-table-head {
   border: solid 1px black;
   text-align: center;
 }
-
 main .main-attendance-container-right .calendar-container__month .month-table .month-table-body {
   border: solid 1px black;
 }
-
 main .main-attendance-container-right .calendar-container__month .month-table .month-table-body .month-table-body-row {
   text-align: center;
 }
-
 main .main-attendance-container-right .calendar-container__month .month-table .month-table-body .month-table-body-row .month-table-body-row-data {
   width: 25%;
   border: solid 1px black;
   cursor: pointer;
 }
-
 main .main-attendance-container-right .calendar-container__month .month-table .month-table-body .month-table-body-row .month-table-body-row-data.selected-month {
   background-color: #c3e7ff;
 }
-
 main .main-attendance-container-right .calendar-container__year {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-top: 50px;
   margin-right: auto;
   margin-left: 5%;
@@ -278,24 +217,20 @@ main .main-attendance-container-right .calendar-container__year {
   height: 125px;
   text-align: center;
 }
-
 main .main-attendance-container-right .calendar-container__year .year-select-btn {
   width: 100%;
   height: 25px;
   margin: 0 auto;
   cursor: pointer;
 }
-
 main .main-attendance-container-right .calendar-container__year .year-select-btn.year-select-btn-up {
   position: absolute;
   top: 0px;
 }
-
 main .main-attendance-container-right .calendar-container__year .year-select-btn.year-select-btn-down {
   position: absolute;
   bottom: 0;
 }
-
 main .main-attendance-container-right .calendar-container__year .year-selection {
   position: relative;
   -webkit-appearance: none;
@@ -306,17 +241,14 @@ main .main-attendance-container-right .calendar-container__year .year-selection 
   width: 100%;
   background-color: transparent;
   text-align: center;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-perspective-origin: top right;
-          perspective-origin: top right;
+  transform-style: preserve-3d;
+  perspective-origin: top right;
   pointer-events: none;
 }
-
 main .main-attendance-container-right .calendar-container__year .year-selection::before {
   position: absolute;
   top: 25px;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   border: solid 1px black;
@@ -325,14 +257,12 @@ main .main-attendance-container-right .calendar-container__year .year-selection:
   pointer-events: none;
   z-index: 100;
 }
-
 main .main-attendance-container-right .calendar-container__year .year-selection .year-select-option {
   position: relative;
   height: 25px;
 }
-
 main .main-attendance-container-right .calendar-container__year .year-selection .year-select-option:focus::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -342,104 +272,74 @@ main .main-attendance-container-right .calendar-container__year .year-selection 
   background-color: red;
   z-index: 2000;
 }
-
 main .main-attendance-container-right .calendar-container__year .year-selection .year-select-option:nth-child(1) {
   color: #d4d4d4;
   opacity: 0;
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
-  -webkit-transform: perspective(3000px) rotateX(45deg);
-          transform: perspective(3000px) rotateX(45deg);
+  transform-origin: bottom center;
+  transform: perspective(3000px) rotateX(45deg);
 }
-
 main .main-attendance-container-right .calendar-container__year .year-selection .year-select-option:nth-child(2) {
   color: #8f8f8f;
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
-  -webkit-transform: perspective(3000px) rotateX(40deg);
-          transform: perspective(3000px) rotateX(40deg);
+  transform-origin: bottom center;
+  transform: perspective(3000px) rotateX(40deg);
 }
-
 main .main-attendance-container-right .calendar-container__year .year-selection .year-select-option:nth-child(3) {
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  -webkit-transform: perspective(0px) rotateX(0deg);
-          transform: perspective(0px) rotateX(0deg);
+  transform-origin: center;
+  transform: perspective(0px) rotateX(0deg);
 }
-
 main .main-attendance-container-right .calendar-container__year .year-selection .year-select-option:nth-child(4) {
   color: #8f8f8f;
-  -webkit-transform-origin: top center;
-          transform-origin: top center;
-  -webkit-transform: perspective(3000px) rotateX(-40deg);
-          transform: perspective(3000px) rotateX(-40deg);
+  transform-origin: top center;
+  transform: perspective(3000px) rotateX(-40deg);
 }
-
 main .main-attendance-container-right .calendar-container__year .year-selection .year-select-option:nth-child(5) {
   color: #d4d4d4;
   opacity: 0;
-  -webkit-transform-origin: top center;
-          transform-origin: top center;
-  -webkit-transform: perspective(0px) rotateX(-45deg);
-          transform: perspective(0px) rotateX(-45deg);
+  transform-origin: top center;
+  transform: perspective(0px) rotateX(-45deg);
 }
-
 main .main-attendance-container-right .current-time-container {
   margin-top: 50px;
 }
-
 main .main-attendance-container-right .current-time-container__date {
   text-align: center;
 }
-
 main .main-attendance-container-right .current-time-container__time {
   text-align: center;
 }
-
 main .main-attendance-container-right .attendance-btn-container {
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 main .main-attendance-container-right .attendance-btn-container__commuting {
   margin-right: 5%;
   margin-left: auto;
 }
-
 main .main-attendance-container-right .attendance-btn-container__leave {
   margin-right: auto;
   margin-left: 5%;
 }
-
 main .main-attendance-container-right .attendance-btn-container .attendance-form .attendance-btn {
   padding: 10px 40px;
   border: solid 1px #b4b4b4;
   color: #707070;
   font-size: 22px;
   letter-spacing: 1px;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 main .main-attendance-container-right .attendance-btn-container .attendance-form .attendance-btn.commuting-btn {
   background-color: #D0D6F8;
 }
-
 main .main-attendance-container-right .attendance-btn-container .attendance-form .attendance-btn.leave-btn {
   background-color: #FCC1C5;
 }
-
 main .main-attendance-container-right .attendance-btn-container .attendance-form .attendance-btn:hover {
   border: solid 1px black;
   color: black;
 }
-
 main .main-attendance-container-right .attendance-btn-container .attendance-form .attendance-btn:hover.commuting-btn {
   background-color: #7a7afc;
 }
-
 main .main-attendance-container-right .attendance-btn-container .attendance-form .attendance-btn:hover.leave-btn {
   background-color: #ff6868;
 }
@@ -450,13 +350,11 @@ main .main-attendance-container-right .attendance-btn-container .attendance-form
     font-size: calc(1.375rem + 1.2vw);
   }
 }
-
 @media (min-width: 600px) {
   .main-chg-container .chg-form .text-form-group .form-text .form-text-input {
     margin-right: 35%;
   }
 }
-
 @media (min-width: 960px) {
   .header-container-admin__menu .header-mobile-admin-menu {
     display: none;
@@ -466,13 +364,10 @@ main .main-attendance-container-right .attendance-btn-container .attendance-form
     background-color: transparent;
     width: auto;
     border: none;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
   .header-container-admin__menu .header-menu-admin .header-menu-admin-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .header-container-admin__menu .header-menu-admin .header-menu-admin-list .header-menu-admin-item {
@@ -482,7 +377,6 @@ main .main-attendance-container-right .attendance-btn-container .attendance-form
     background-color: #D0D6F8;
     margin-right: 20px;
     padding: 5px 25px;
-    -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
   .header-container-admin__menu .header-menu-admin .header-menu-admin-list .header-menu-admin-item:hover {
@@ -506,10 +400,10 @@ main .main-attendance-container-right .attendance-btn-container .attendance-form
   .header-container-admin__menu .header-menu-admin .header-menu-admin-list .header-menu-admin-item > a:hover {
     text-shadow: none;
   }
+
   .main-chg-container .chg-form .text-form-group {
     height: 192px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .main-chg-container .chg-form .text-form-group .form-text .form-text-input {
     margin-right: 35%;
@@ -527,10 +421,8 @@ main .main-attendance-container-right .attendance-btn-container .attendance-form
     margin-right: 10%;
   }
 }
-
 @media (min-width: 1280px) {
   .main-chg-container .chg-form .text-form-group .form-text .form-text-input {
     margin-right: 55%;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

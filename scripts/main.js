@@ -20,5 +20,6 @@ class Main {
         new ClickMonth('.month-table-body-row-data');
         new ScrollYears('.calendar-container__year');
         new CurrentTime('.current-time-container__date', '.current-time-container__time');
+        new MakeAttendanceRow('.attendance-table-body');
     }
 }
