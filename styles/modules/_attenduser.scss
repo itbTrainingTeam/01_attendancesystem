@@ -2,6 +2,63 @@
     margin: 50px auto;
 }
 
+main {
+    display:flex;
+
+.main-attendance-container-left {
+    color: #707070;
+    width: 50%;
+
+    & .table_title {
+        overflow: hidden;
+        margin: 50px auto;
+        text-align: center;
+    
+            & select {
+                padding: 10px;
+                font-size:20px;
+                border:1px solid #707070;
+                color: #707077;
+            }
+
+    }
+
+    & table {
+
+        margin: 10px auto;
+        border-collapse: collapse;
+        width: 90%;
+
+    & th, td {
+        border: solid 1px #333; /* 線の種類 太さ 色 */
+    }
+    
+    }
+
+    & .export {
+        margin: auto;
+        width: 90%;
+    }
+
+    & .view_work {
+        margin: 10px auto;
+        width: 90%;
+        padding: 10px;
+        border: solid 1px #333;
+        height: 70px;
+
+        & .p {
+            float: left;
+            width: 50%;
+        }
+            
+        }
+
+}
+
+.main-attendance-container-right{
+    width: 50%;
+
 .calendar-container{
     display: flex;
 
@@ -206,4 +263,9 @@
             }
         }
     }
+}
+
+}
+
+
 }

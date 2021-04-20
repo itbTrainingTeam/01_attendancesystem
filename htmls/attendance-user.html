@@ -16,6 +16,81 @@
     </header>
     <!-- メインコンテンツ -->
     <main>
+        <!-- メインコンテンツ(左側部分) -->
+        <div class="main-attendance-container-left">
+            <div class="table_title">
+              <!-- <form action=""> -->
+                <select id="year-month" name="year-month">
+                  <option value="2021-04">勤怠太郎2021年4月の勤務状況</option>
+                  <option value="2021-03">勤怠太郎2021年3月の勤務状況</option>
+                  <option value="2021-02">勤怠太郎2021年2月の勤務状況</option>
+                  <option value="2021-01">勤怠太郎2021年1月の勤務状況</option>
+                </select>
+              <!-- </form> -->
+            </div>
+            <div>
+              <!-- <p>2021年4月</p> -->
+            </div>
+            <div>
+              <table class="table" >
+                <thead>
+                  <tr>
+                    <th>日付</th>
+                    <th>曜日</th>
+                    <th>勤務形態</th>
+                    <th>始業時刻</th>
+                    <th>就業時刻</th>
+                    <th>休憩入り</th>
+                    <th>休憩戻り</th>
+                    <th>勤務時間</th>
+                    <th>備考</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                        <script>
+                            var hiduke=new Date(); 
+                            var month = hiduke.getMonth()+1;
+                            var day = hiduke.getDate();
+                            document.write(month+"/"+day);
+                        </script>
+                        
+                    </td>
+                    <td>
+                        <script>
+                            var hiduke=new Date(); 
+                            var week = hiduke.getDay();
+                            var yobi= new Array("日","月","火","水","木","金","土");
+                            document.write(yobi[week]);
+                        </script>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="export">
+              <a href="#">データのエクスポート</a>
+              
+            </div>
+            <div class="view_work">
+              <div class="p">所定勤務日数　</div>
+              <div class="p">総勤務時間　</div><br>
+              <div class="p">実勤務日数　</div>
+              <div class="p">有休消化日数　</div>
+            </div>
+        </div>
+
+
+
+
         <!-- メインコンテンツ(右側部分) -->
         <div class="main-attendance-container-right">
             <!-- カレンダーコンテナ -->
