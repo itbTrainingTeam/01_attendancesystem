@@ -46,33 +46,7 @@
                     <th>備考</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                        <script>
-                            var hiduke=new Date(); 
-                            var month = hiduke.getMonth()+1;
-                            var day = hiduke.getDate();
-                            document.write(month+"/"+day);
-                        </script>
-                        
-                    </td>
-                    <td>
-                        <script>
-                            var hiduke=new Date(); 
-                            var week = hiduke.getDay();
-                            var yobi= new Array("日","月","火","水","木","金","土");
-                            document.write(yobi[week]);
-                        </script>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
+                <tbody class="attendance-table-body">
                 </tbody>
               </table>
             </div>
@@ -155,6 +129,7 @@
             </div>
         </div>
     </main>
+    <script src="../scripts/libs/makeAttendanceRow.js"></script>
     <script src="../scripts/libs/currentTime.js"></script>
     <script src="../scripts/libs/scrollYears.js"></script>
     <script src="../scripts/libs/clickMonth.js"></script>
