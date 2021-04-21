@@ -10,7 +10,7 @@ class Main {
     _init() {
         new LoadHtml('#admin-header', 'common/admin-header.html')
         new LoadHtml('#user-header', 'common/user-header.html')
-        new ToggleClassOnClick('open', '.header-mobile-menu', '.header-menu');
+        new ToggleClassOnClick('open', '.header-mobile-menu', '.header-menu'); //起こる動作、対象となるクラス（）を、（任意）
         
     }
 }

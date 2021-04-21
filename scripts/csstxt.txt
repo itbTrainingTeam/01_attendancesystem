@@ -1,0 +1,38 @@
+/*HTML
+
+ブロック要素:自動的に改行される <h>,<div>,<form>,<table>,<p>,<ul>,<li> →横並びにするにはfloat (float:left;)
+インライン要素:横並びになる <img>,<a href>,<strong>
+
+CSS
+
+displayプロパティはブロック要素化、インライン要素化できる。
+
+    display:block; インライン要素をブロック要素化できる。縦並びにできる。
+    display:inline; ブロック要素→インライン要素。横並び。
+    display:inline-block; ブロック要素をインライン要素で表示したい場合に使用。
+        インライン要素のように横並びできて、ブロック要素のように間隔を上下左右に自由に指定できる。
+    display:flex;要素が横並びになる
+    
+    <span></span>インライン要素として要素化。改行なし。
+
+text-align:center; インライン要素を中央寄せ
+
+margin:o auto; ブロック要素自体を中央寄せ
+
+********************************************************************
+animation プロパティと @keyframes を使うと、CSSだけでアニメーションの設定ができる。
+
+thead tablehead colspan 
+tlow tablelow tbody 
+
+*上下中央寄せをするにはdisplay:flex
+
+
+
+
+
+
+
+
+
+*/

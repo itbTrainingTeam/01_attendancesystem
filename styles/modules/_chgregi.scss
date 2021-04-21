@@ -64,7 +64,7 @@
                         text-decoration: none;
 
                         &:hover {
-                            text-shadow: 2px 2px 3px blue;
+                            text-shadow: 2px 2px 3px rgb(193, 148, 236);
                         }
                     }
 
@@ -76,6 +76,8 @@
         }
     }
 }
+
+
 
 @keyframes kf-open-menu {
 
