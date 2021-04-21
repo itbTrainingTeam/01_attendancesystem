@@ -62,7 +62,9 @@ class ToggleClassOnClick {
 
         } else if ( this.argumentType[1] === '[object String]' ) {
 
-            [].slice.call(document.querySelectorAll(triggerEls)).forEach( triggerEl => { this.DOM.triggerEls.push(triggerEl) } );
+            [].slice.call(document.querySelectorAll(triggerEls)).forEach( triggerEl => { 
+                this.DOM.triggerEls.push(triggerEl);
+            } );
 
         } else if ( this.argumentType[1] === '[object NodeList]' ) {
 
@@ -139,7 +141,6 @@ class ToggleClassOnClick {
 
     /* Given Click Event to HTML elements */
     _addEvent() {
-
         this.DOM.triggerEls.forEach( triggerEls => {
             triggerEls.addEventListener(this.eventType, this._toggleClass.bind(this));
         });

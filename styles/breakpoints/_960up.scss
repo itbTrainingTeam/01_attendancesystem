@@ -1,10 +1,10 @@
-.header-container {
+.header-container-admin {
     &__menu {
-        & .header-mobile-menu {
+        & .header-mobile-admin-menu {
             display: none;
         }
 
-        & .header-menu {
+        & .header-menu-admin {
             position: static;
             background-color: transparent;
             width: auto;
@@ -12,10 +12,10 @@
             transform: translateY(0);
             opacity: 1;
 
-            & .header-menu-list {
+            & .header-menu-admin-list {
                 display: flex;
 
-                & .header-menu-item {
+                & .header-menu-admin-item {
                     display: block;
                     border: solid 1px black;
                     border-radius: 0.7rem;
