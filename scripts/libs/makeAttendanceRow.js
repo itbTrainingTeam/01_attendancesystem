@@ -6,6 +6,7 @@ class MakeAttendanceRow {
       this.date = new Date();
       this.thisYear = "";
       this.leapYearFlg = false;
+      this._jdgLeapYear();
       this._getThisYear();
       this.thisMonth = (this.date.getMonth() + 1);
       this.maxDay = 31;
@@ -17,10 +18,10 @@ class MakeAttendanceRow {
       this._makeRecord();
       this.DOM.tableRowEl.innerHTML = this.record;
 
-      console.log(this.dayAry)
-      var testDate = new Date(2021 + "/" + 4 + "/" + 21);
-      var weekTest = ["日", "月", "火", "水", "木", "金"];
-      console.log(weekTest[testDate.getDay()]);
+//       console.log(this.dayAry)
+//       var testDate = new Date(2021 + "/" + 4 + "/" + 21);
+//       var weekTest = ["日", "月", "火", "水", "木", "金"];
+//       console.log(weekTest[testDate.getDay()]);
   }
 
   _getThisYear() {
