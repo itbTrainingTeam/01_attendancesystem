@@ -20,6 +20,96 @@ h1 {
 }
 
 /* import modules */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-container-user {
+  display: block;
+  background-color: #B3EFE3;
+  height: 80px;
+}
+
+.header-container-user__title .header-title-user {
+  text-align: center;
+  padding-top: 17px;
+}
+
+.main-login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-login-container .form-container {
+  width: 70%;
+  margin: 60px auto;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: #b3afaf;
+  padding: 30px;
+}
+
+.main-login-container .form-container__text {
+  text-align: center;
+}
+
+.main-login-container .form-container__text .form-label {
+  font-weight: bold;
+}
+
+.main-login-container .form-container__text:first-child {
+  margin-bottom: 20px;
+}
+
+.main-login-container .form-container__text .input-text {
+  margin-top: 10px;
+  height: 20px;
+}
+
+.main-login-container .form-container__btn {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.main-login-container .form-container__btn .button {
+  border-radius: 10px;
+  font-size: 12pt;
+  cursor: pointer;
+  padding: 12px 12px;
+  background: #999999;
+  color: #000000;
+  line-height: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid #999999;
+  font-weight: bold;
+}
+
+.main-login-container .form-container__btn .button:hover {
+  color: #999999;
+  background: #464545;
+}
+
+.main-login-container .form-container__checkbox {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.main-login-container .form-container__checkbox .checkbox-text {
+  margin-left: 2px;
+}
+
+.main-login-container .form-container__anchor-link {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.main-login-container .form-container__anchor-link a {
+  text-decoration: none;
+}
+
 .header-container-admin {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -455,6 +545,9 @@ main .main-attendance-container-right .attendance-btn-container .attendance-form
   .main-chg-container .chg-form .text-form-group .form-text .form-text-input {
     margin-right: 35%;
   }
+  .main-login-container .form-container {
+    width: 350px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -525,6 +618,19 @@ main .main-attendance-container-right .attendance-btn-container .attendance-form
   }
   .main-chg-container .chg-form .text-form-group .form-text:nth-child(4) .form-text-input {
     margin-right: 10%;
+  }
+  .main-login-container .form-container__text .form-label {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .main-login-container .form-container__text:first-child {
+    margin-bottom: 30px;
+  }
+  .main-login-container .form-container__checkbox {
+    margin-top: 30px;
+  }
+  .main-login-container .form-container__btn {
+    margin-top: 40px;
   }
 }
 

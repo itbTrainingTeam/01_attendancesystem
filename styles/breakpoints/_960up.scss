@@ -75,3 +75,27 @@
         }
     }
 }
+
+.main-login-container {
+    .form-container {
+
+        &__text {
+            & .form-label {
+                font-weight: bold;
+                font-size: 15px;
+            }
+
+            &:first-child {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__checkbox {
+            margin-top: 30px;
+        }
+
+        &__btn {
+            margin-top: 40px;
+        }
+    }
+}
