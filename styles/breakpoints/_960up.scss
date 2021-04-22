@@ -93,3 +93,43 @@
         }
     }
 }
+
+.employee-list-container {
+    & .list-container-header {
+        
+        & .list-container-header__button {
+            margin: 0 0 0 auto;
+            margin-right: 40px;
+            margin-top: 10px;
+
+            & .list {
+                & .search-button {
+                    height: 40px;
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    & .list-container-footer {
+        & .sort-form {
+            & .text-form-group { 
+                height: 192px;
+                flex-wrap: wrap;
+                & .form-text {
+                    & .form-text-input {
+                        margin-right: 35%;
+                    }
+
+                    @for $i from 1 through 4 {
+                        &:nth-child(#{$i}) {
+                            & .form-text-input {
+                                margin-right: 10%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

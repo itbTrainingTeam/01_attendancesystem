@@ -15,3 +15,36 @@
         width: 350px;
     }
 }
+
+.employee-list-container {
+    & .list-container-header {
+        & .list-container-header__sort {
+            margin-top: 10px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+        & .list-container-header__button {
+            margin: 0 0 0 auto;
+            margin-right: 28px;
+            margin-top: 12px;
+            & .list {
+                & .search-button {
+                    width: 220px;
+                }
+            }
+        }
+    }
+
+    & .list-container-footer {
+        & .sort-form {
+            & .text-form-group {
+                & .form-text {
+                    & .form-text-input {
+                        margin-right: 30%;
+                    }
+                }
+            }
+        }
+    }
+}
