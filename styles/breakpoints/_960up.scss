@@ -56,21 +56,15 @@
 
 .main-chg-container {
     & .chg-form {
-        & .text-form-group { 
-            height: 192px;
-            flex-wrap: wrap;
-            & .form-text {
-                & .form-text-input {
-                    margin-right: 35%;
-                }
+        & .chg-form1{
+            display: flex;
 
-                @for $i from 1 through 4 {
-                    &:nth-child(#{$i}) {
-                        & .form-text-input {
-                            margin-right: 10%;
-                        }
-                    }
-                }
+            & .text-form-group1{
+                margin-right: 10px;
+            }
+
+            & .text-form-group2{
+                margin-left: 10px;
             }
         }
     }

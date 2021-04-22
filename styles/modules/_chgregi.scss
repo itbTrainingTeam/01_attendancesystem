@@ -6,6 +6,7 @@
     &__title {
         margin: auto 0;
         margin-left: 20px;
+
     }
 
     &__menu {
@@ -76,58 +77,59 @@
     }
 }
 
-.main-chg-container {
-    @extend .mb-lg;
+@keyframes kf-open-menu {
 
-    & .chg-form {
+    }
+
+.main-chg-container{
+    width: 100%;
+
+    & .chg-form{
         margin-top: 30px;
-
-        & .text-form-group {
-            display: flex;
-            flex-direction: column;          
-
-            & .form-text {
-                height: 30px;
-                display: flex;
-                @extend .mb-sm;
+        border: 2px solid red;
+        
+        & .chg-form1{
+            & .text-form-group1 , .text-form-group2{
+                width: 320px;
+                margin: 0 auto;
                 
+                & .form-text{
+                    text-align: right;
+                    margin-right: 23px;
+                    margin-bottom: 10px;
+                    height: 30px;
 
-                & .form-text-label {
-                    display: block;
-                    margin-left: auto;
+                    & .form-text-label{
+                        &::after {
+                            content: ":";
+                            margin-left: 5px;
+                            margin-right: 10px;
 
-                    &::after {
-                        content: ":";
-                        margin-left: 5px;
-                        margin-right: 15px;
+                        }
                     }
-
-                }
-
-                & .form-text-input {
-                    display: block;
-                    margin-right: 25%;
                 }
             }
         }
 
-        & .form-btn {
-            
-            & .form-btn-submit {
-                display: block;
-                margin: 0 auto;
-                padding: 2px 36px;
-                background-color: $cBtn;
-                border: solid 1px $cBaseFont;
-                color: $cBaseFont;
-                font-size: 20px;
-                transition: all 0.3s;
+        & .chg-form2{
+            & .form-btn {
+                & .form-btn-submit {
+                    display: block;
+                    margin: 0 auto;
+                    padding: 2px 36px;
+                    background-color: $cBtn;
+                    border: solid 1px $cBaseFont;
+                    color: $cBaseFont;
+                    font-size: 20px;
+                    transition: all 0.3s;
 
-                &:hover {
-                    border: solid 1px $cBtnBorder;
-                    background-color: #b9c2fd;
+                    &:hover {
+                        border: solid 1px $cBtnBorder;
+                        background-color: #b9c2fd;
+                    }
                 }
             }
         }
     }
 }
+

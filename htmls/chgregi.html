@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kameron&family=Shippori+Mincho&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/venders/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="../styles/style.css">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kameron&family=Shippori+Mincho&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/venders/bootstrap-reboot.min.css">
+        <link rel="stylesheet" href="../styles/style.css">
     <!-- <script src="../scripts/libs/loadHtml.js"></script>
         <script src="../scripts/libs/load.js"></script> -->
     </head>
@@ -19,53 +19,66 @@
         <!-- 必要 -->
         <!-- <script src="../scripts/libs/loadHtml.js"></script>
         <script src="../scripts/libs/load.js"></script> -->
-    <main>
-        <div class="main-chg-container">
-            <form class="chg-form" action="">
-                <div class="text-form-group">
-                    <div class="form-text">
-                        <label class="form-text-label" for="chg-name">名前</label>
-                        <input class="form-text-input" type="text" name="" id="chg-name">
+        <main>
+            <div class="main-chg-container">
+                <form action="" class="chg-form">
+
+                    <div class="chg-form1">
+
+                        <div class="text-form-group1">
+                            <div class="form-text">
+                                <label class="form-text-label" for="chg-name">名前</label>
+                                <input class="form-text-input" type="text" name="" id="chg-name">
+                            </div>
+                            <div class="form-text">
+                                <label class="form-text-label" for="chg-id">ID</label>
+                                <input class="form-text-input" type="text" name="" id="chg-id">
+                            </div>
+                            <div class="form-text">
+                                <label class="form-text-label" for="chg-password">Password</label>
+                                <input class="form-text-input" type="text" name="" id="chg-password">
+                            </div>
+                            <div class="form-text">
+                                <label class="form-text-label" for="chg-authority">権限レベル</label>
+                                <input class="form-text-input" type="text" name="" id="chg-authority">
+                            </div>
+                        </div>
+
+                        <div class="text-form-group2">
+                            <div class="form-text">
+                                <label class="form-text-label" for="chg-birthday">生年月日</label>
+                                <input class="form-text-input" type="text" name="" id="chg-birthday">
+                            </div>
+                            <div class="form-text">
+                                <label class="form-text-label" for="chg-age">年齢</label>
+                                <input class="form-text-input" type="text" name="" id="chg-age">
+                            </div>
+                            <div class="form-text">
+                                <label class="form-text-label" for="chg-employment">雇用形態</label>
+                                <input class="form-text-input" type="text" name="" id="chg-employment">
+                            </div>
+                            <div class="form-text">
+                                <label class="form-text-label" for="chg-monthofjoining">入社月</label>
+                                <input class="form-text-input" type="text" name="" id="chg-monthofjoining">
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-text">
-                        <label class="form-text-label" for="chg-id">ID</label>
-                        <input class="form-text-input" type="text" name="" id="chg-id">
+                    
+                    <div class="chg-form2">
+
+                        <div class="form-btn">
+                            <input class="form-btn-submit" type="submit" value="変更">
+                        </div>
                     </div>
-                    <div class="form-text">
-                        <label class="form-text-label" for="chg-password">Password</label>
-                        <input class="form-text-input" type="text" name="" id="chg-password">
-                    </div>
-                    <div class="form-text">
-                        <label class="form-text-label" for="chg-authority">権限レベル</label>
-                        <input class="form-text-input" type="text" name="" id="chg-authority">
-                    </div>
-                    <div class="form-text">
-                        <label class="form-text-label" for="chg-birthday">生年月日</label>
-                        <input class="form-text-input" type="text" name="" id="chg-birthday">
-                    </div>
-                    <div class="form-text">
-                        <label class="form-text-label" for="chg-age">年齢</label>
-                        <input class="form-text-input" type="text" name="" id="chg-age">
-                    </div>
-                    <div class="form-text">
-                        <label class="form-text-label" for="chg-employment">雇用形態</label>
-                        <input class="form-text-input" type="text" name="" id="chg-employment">
-                    </div>
-                    <div class="form-text">
-                        <label class="form-text-label" for="chg-monthofjoining">入社月</label>
-                        <input class="form-text-input" type="text" name="" id="chg-monthofjoining">
-                    </div>
-                 </div>
-                 <div class="form-btn">
-                     <input class="form-btn-submit" type="submit" value="変更">
-                 </div>
-            </form>
-        </div>
-    </main>
-    <!-- 必要 -->
-    <script src="../scripts/libs/loadHtml.js"></script>
-    <script src="../scripts/libs/toggleClassIOnClick.js"></script>
-    <script src="../scripts/main.js"></script>
-    <!-- 必要 -->
-</body>
+
+                </form>
+            </div>
+        </main>
+        
+        <!-- 必要 -->
+        <script src="../scripts/libs/loadHtml.js"></script>
+        <script src="../scripts/libs/toggleClassIOnClick.js"></script>
+        <script src="../scripts/main.js"></script>
+        <!-- 必要 -->
+    </body>
 </html>
